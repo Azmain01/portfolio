@@ -3,43 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
+    <title>Scrollspy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-<div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+        <a class="navbar-brand" href="#">Foodhub</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">Pizza</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Burger</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Drinks</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Coca Cola</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Pepsi</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fanta</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <h4 id="scrollspyHeading1">Pizza</h4>
+        <p>Pizza is one of those foods that feels universal without ever being boring. No matter where you are in the world, the
+        word itself lands with immediate familiarity. At its core, pizza is simple: dough, sauce, cheese, heat. Yet that
+        simplicity is exactly what gives it room to evolve, adapt, and reflect the tastes of the people making it.
+        
+        The foundation of any good pizza is the dough. It is often overlooked, but it does most of the heavy lifting. A
+        well-made dough balances chew and crisp, offering structure without getting in the way. In Naples, the dough is soft and
+        airy, blistered by intense heat and folded easily by hand. In New York, it stretches thin and wide, sturdy enough to be
+        eaten on the go. Elsewhere, it might be thick, pan-baked, or somewhere in between. Each style tells a story about time,
+        technique, and local preference.
+        
+        The sauce is where personality starts to show. Traditional tomato sauce leans on restraint, using ripe tomatoes, salt,
+        and maybe a touch of olive oil. When done right, it tastes fresh rather than cooked down. Some pizzas skip sauce
+        entirely, replacing it with olive oil, cream, or nothing at all. Others go bold with spicy, garlicky, or herb-heavy
+        blends. The key is balance. The sauce should support the rest of the pizza, not overpower it.
+        
+        Cheese is often the emotional center of pizza. Mozzarella remains the standard, prized for its melt and mild flavor.
+        Fresh mozzarella brings moisture and softness, while low-moisture versions offer stretch and browning. Beyond
+        mozzarella, there is endless variation: sharp provolone, nutty parmesan, creamy ricotta, or even blue cheese in careful
+        amounts. Cheese can unify a pizza or completely change its direction.
+        
+        Toppings are where pizza becomes deeply personal. Some people stick to classics like pepperoni, mushrooms, or olives.
+        Others treat pizza as a blank canvas for experimentation. Vegetables can add sweetness, bitterness, or crunch. Meats
+        bring richness and salt. Herbs finish everything with aroma and freshness. There is no single right combination, only
+        ones that work and ones that do not.
+        
+        What makes pizza special is not just how it tastes, but how it fits into life. It is casual without feeling careless. It
+        works at a family table, a late-night kitchen, or a crowded party. It can be shared or eaten alone, hot from the oven or
+        cold from the fridge. Pizza adapts to the moment.
+        
+        In the end, pizza endures because it is forgiving and expressive at the same time. You can follow tradition closely or
+        break every rule and still end up with something satisfying. Few foods offer that kind of freedom. That is why pizza
+        remains more than a meal. It is a comfort, a craft, and a constant.
+</p>
+        <h4 id="scrollspyHeading2">Burger</h4>
+        <p>The burger holds a unique place in food culture because it manages to be both straightforward and endlessly
+        customizable. At its most basic, it is a patty of ground meat cooked with care and placed inside a bun. Yet within that
+        simple structure exists an entire world of choices, preferences, and opinions. Few foods invite as much debate while
+        remaining so widely loved.
+        
+        Everything starts with the patty. Beef is the classic choice, valued for its richness and ability to stay juicy when
+        cooked properly. The fat content matters more than seasoning. Too lean and the burger dries out. Too fatty and it can
+        fall apart. A good patty needs little more than salt, heat, and timing. Some people prefer it smashed thin for crisp
+        edges, while others want it thick and pink in the center. Both approaches work when done with intention.
+        
+        The bun is not just a delivery system. It plays a critical role in texture and balance. A soft bun absorbs juices
+        without disintegrating. A lightly toasted interior adds structure and prevents sogginess. Brioche brings sweetness,
+        potato buns add tenderness, and classic sesame buns offer familiarity. When the bun is wrong, even a great patty
+        struggles to shine.
+        
+        Cheese is often non-negotiable. American cheese melts smoothly and coats the meat, which is why it remains a favorite
+        despite its simplicity. Cheddar adds sharpness, Swiss brings nuttiness, and blue cheese delivers intensity for those who
+        want it. The timing of the melt matters. Cheese should fuse with the patty, not sit on top as an afterthought.
+        
+        Toppings and condiments are where the burger becomes personal. Lettuce adds crunch, tomato adds freshness, and onion
+        provides bite, whether raw, grilled, or caramelized. Pickles cut through richness with acid. Sauces tie everything
+        together. Ketchup, mustard, and mayo are classics for a reason, but house sauces, aioli, or even barbecue can shift the
+        entire flavor profile.
+        
+        What makes burgers so appealing is their flexibility. They can be fast food or carefully crafted. They work just as well
+        at a backyard grill as they do in a high-end restaurant. Burgers invite improvisation without demanding perfection. You
+        can stack them high or keep them minimal. You can follow tradition or ignore it completely.
+        
+        At the end of the day, the burger succeeds because it delivers satisfaction without pretense. It is filling, familiar,
+        and adaptable. When all the elements come together, a good burger feels complete. Not complicated, not fussy, just
+        right.</p>
+        <h4 id="scrollspyHeading3">Coca Cola</h4>
+        <p>Coca Cola is more than a soft drink. It is a cultural symbol that has managed to stay relevant for over a century. You
+        can find it almost anywhere in the world, served in glass bottles, cans, plastic cups, or poured over ice in a
+        restaurant. Few products carry that kind of recognition, and even fewer inspire such strong feelings of nostalgia and
+        familiarity.
+        
+        At its core, Coca Cola is about balance. It is sweet but not flat, acidic but refreshing. The carbonation lifts the
+        flavor and keeps it lively, while the caramel notes give it depth. People often talk about the secret formula, but what
+        really matters is consistency. A Coca Cola in one country may taste slightly different from another, yet it always feels
+        unmistakably the same drink. That reliability is part of its appeal.
+        
+        Coca Cola has always been closely tied to moments rather than meals alone. It shows up at family gatherings, road trips,
+        movie nights, and celebrations. It is the drink pulled from a cooler on a hot day and the one handed to you with a slice
+        of pizza or a burger. Over time, it has become associated with comfort and familiarity. Even people who rarely drink
+        soda often recognize the feeling attached to it.
+        
+        Marketing played a huge role in shaping that identity. Coca Cola did not just sell a beverage. It sold an idea of
+        happiness, togetherness, and simple pleasure. From classic holiday imagery to iconic slogans, the brand learned how to
+        speak to emotion without saying much at all. Those images stuck, passing from one generation to the next.
+        
+        The design of Coca Cola deserves attention too. The curved glass bottle is instantly recognizable, even without a label.
+        The red and white color scheme is simple and bold, standing out without trying too hard. These choices helped turn an
+        everyday drink into something iconic. People do not just ask for a cola. They often ask specifically for a Coke.
+        
+        Of course, Coca Cola has not avoided criticism. Concerns about sugar, health, and changing diets have pushed the company
+        to adapt. Zero sugar options, smaller serving sizes, and alternative products all reflect a response to modern habits.
+        Still, the original version remains the reference point. It is the standard against which everything else is measured.
+        
+        What makes Coca Cola endure is not just how it tastes, but how it fits into life. It does not demand attention. It
+        simply shows up, familiar and dependable. Whether shared with friends or enjoyed alone, it carries a sense of
+        continuity. In a world that changes quickly, Coca Cola remains recognizable. That quiet consistency may be its most
+        powerful ingredient.</p>
+        <h4 id="scrollspyHeading4">Pepsi</h4>
+        <p>Pepsi has always positioned itself as the other side of the cola conversation. Where Coca Cola leans into tradition and
+        familiarity, Pepsi built its identity around youth, energy, and change. From its flavor to its branding, Pepsi has
+        consistently tried to feel current, aiming to reflect the moment rather than the past.
+        
+        In terms of taste, Pepsi is slightly sweeter and more citrus-forward than its main rival. That difference, while subtle,
+        shapes how people experience it. Some find Pepsi smoother and easier to drink on its own, while others prefer Coca Cola
+        with food. This small contrast has fueled decades of debate, blind taste tests, and strong personal loyalties. It proves
+        how even minor variations can create lasting preferences.
+        
+        Pepsi’s strength has often been its willingness to experiment. The brand embraced pop culture early, tying itself to
+        music, sports, and celebrities. These partnerships were not just endorsements but statements about relevance. Pepsi
+        wanted to be associated with what was happening now. That approach helped it connect with younger audiences and keep
+        refreshing its image as trends shifted.
+        
+        The look of Pepsi reflects that mindset. Its logo has changed many times, evolving with design trends while keeping its
+        core colors. The branding feels dynamic rather than fixed. This flexibility allows Pepsi to reinvent itself without
+        losing recognition. It may not rely on nostalgia as heavily, but it stays visually modern and adaptable.
+        
+        Like all major soda brands, Pepsi has had to respond to changing attitudes about health and sugar. Diet Pepsi, Pepsi
+        Zero Sugar, and other variations show an effort to keep up with consumer habits. Some versions succeed more than others,
+        but the willingness to adjust has remained consistent. Pepsi rarely stands still for long.
+        
+        Pepsi also occupies a strong place in everyday moments. It is poured at parties, packed into coolers, and served with
+        fast food across the world. For many people, it is tied to specific memories, certain restaurants, or particular times
+        in life. Loyalty to Pepsi often comes from those associations rather than deliberate choice.
+        
+        What ultimately defines Pepsi is its role as an alternative that never feels secondary. It thrives on contrast and
+        competition. By choosing not to mirror Coca Cola, Pepsi carved out its own voice. That difference keeps the conversation
+        alive. Whether someone prefers Pepsi or not, its presence shapes how people think about cola itself.
+</p>
+        <h4 id="scrollspyHeading5">Fanta</h4>
+        <p>Fanta is all about brightness, both in flavor and personality. From the first sip, it feels playful and direct. Where
+        colas aim for depth and complexity, Fanta leans into fruitiness and fun. It is designed to be easy to enjoy, with no
+        need to overthink it.
+        
+        The flavor is the main event. Orange is the most recognizable, but Fanta has always been open to variety. Grape,
+        pineapple, strawberry, lemon, and region-specific flavors give it a wide reach. In some countries, Fanta tastes less
+        sweet and more citrus-forward, while in others it is richer and bolder. That flexibility helps it adapt to local
+        preferences without losing its identity.
+        
+        Fanta’s carbonation is lively but not aggressive. It adds lift without overpowering the fruit flavor. This balance makes
+        it especially refreshing when served cold. It is the kind of drink people associate with hot weather, outdoor meals, and
+        casual moments. Fanta does not try to feel serious or grown-up. That is part of its charm.
+        
+        The branding reflects this energy. Bright colors, rounded lettering, and playful visuals make Fanta instantly
+        recognizable. It often feels youthful, even mischievous. The brand speaks in a relaxed, upbeat tone, aiming to connect
+        through fun rather than tradition. Fanta rarely leans on nostalgia. It prefers to stay light and current.
+        
+        Fanta is often tied to social moments. It shows up at parties, picnics, and family gatherings, especially where kids and
+        teenagers are involved. It pairs easily with snacks and fast food, but it also stands on its own. People drink Fanta
+        because they want something flavorful and cheerful, not because they are loyal to a category.
+        
+        Like other soft drinks, Fanta has had to respond to changing attitudes around sugar and health. Reduced-sugar and
+        zero-sugar versions are now common, allowing people to enjoy the flavor with fewer calories. While these options vary in
+        popularity, they show that Fanta is willing to evolve without losing its playful core.
+        
+        What makes Fanta endure is its clarity of purpose. It knows what it is and does not pretend to be anything else. Fanta
+        is fun, fruity, and uncomplicated. In a world where many brands try to stand for everything, Fanta stands for enjoyment.
+        Sometimes, that is more than enough.
+</p>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.webp?b=1&s=612x612&w=0&k=20&c=HU9fGxunk5fCW3pN-I1cS53X8--QBgYYDUPInhyTMZU=" class="d-block w-100" alt="..." style="height: 450px; object-fit:cover;">
-        </div>
-        <div class="carousel-item">
-            <img src="https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?b=1&s=612x612&w=0&k=20&c=5F4SvP5LPjDtjDqohFrTSV1qLrjxG1Edniu4I9WzM8c=" class="d-block w-100" alt="..." style="height: 450px; object-fit:cover; ">
-        </div>
-        <div class="carousel-item">
-            <img src="https://media.istockphoto.com/id/520410807/photo/cheeseburger.webp?b=1&s=612x612&w=0&k=20&c=Fg5ZhECbjUQ4PkSkTsEwwX7BbCSrCU3IUgoEEwAIFjo=" class="d-block w-100" alt="..." style="height: 450px; object-fit : cover;">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
 
 
 
